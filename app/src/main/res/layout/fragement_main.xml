@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <cn.bingoogolapple.bgabanner.BGABanner
+            android:id="@+id/main_bga"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:banner_pageChangeDuration="1000"
+            app:banner_pointAutoPlayAble="true"
+            app:banner_pointContainerBackground="@android:color/transparent"
+            app:banner_pointDrawable="@drawable/bga_banner_selector_point_hollow"
+            app:banner_pointTopBottomMargin="15dp"
+            app:banner_transitionEffect="alpha"
+            />
+
+
+        <ImageView
+            android:src="@drawable/wuyezhangdan"
+            android:layout_marginTop="30dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/main_wuyezhangdan"
+
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintRight_toLeftOf="@+id/main_wuyejiaofei"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/main_bga"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="物业账单"
+            app:layout_constraintTop_toBottomOf="@id/main_wuyezhangdan"
+            app:layout_constraintLeft_toLeftOf="@id/main_wuyezhangdan"/>
+
+        <ImageView
+            android:layout_marginTop="30dp"
+
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/main_wuyejiaofei"
+            android:src="@drawable/wuyejiaofei"
+
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintRight_toLeftOf="@+id/main_wuyedingshui"
+            app:layout_constraintLeft_toRightOf="@id/main_wuyezhangdan"
+            app:layout_constraintTop_toBottomOf="@id/main_bga"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="物业缴费"
+            app:layout_constraintTop_toBottomOf="@id/main_wuyejiaofei"
+            app:layout_constraintLeft_toLeftOf="@id/main_wuyejiaofei"/>
+
+        <ImageView
+            android:layout_marginTop="30dp"
+
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/main_wuyedingshui"
+            android:src="@drawable/wuyedingshui"
+
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintRight_toLeftOf="@+id/main_wuyezufang"
+            app:layout_constraintLeft_toRightOf="@id/main_wuyejiaofei"
+            app:layout_constraintTop_toBottomOf="@id/main_bga"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="服务订购"
+            app:layout_constraintTop_toBottomOf="@id/main_wuyedingshui"
+            app:layout_constraintLeft_toLeftOf="@id/main_wuyedingshui"/>
+
+        <ImageView
+            android:layout_marginTop="30dp"
+
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/main_wuyezufang"
+            android:src="@drawable/wuyezufang"
+
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintLeft_toRightOf="@id/main_wuyedingshui"
+            app:layout_constraintTop_toBottomOf="@id/main_bga"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="房屋出租"
+            app:layout_constraintTop_toBottomOf="@id/main_wuyezufang"
+            app:layout_constraintLeft_toLeftOf="@id/main_wuyezufang"/>
+
+        <ImageView
+            android:layout_marginTop="30dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/main_wuyebaoxiu"
+            android:src="@drawable/wuyebaoxiu"
+
+            app:layout_constraintLeft_toLeftOf="@id/main_wuyezhangdan"
+            app:layout_constraintTop_toBottomOf="@id/main_wuyezhangdan"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="物业报修"
+            app:layout_constraintTop_toBottomOf="@id/main_wuyebaoxiu"
+            app:layout_constraintLeft_toLeftOf="@id/main_wuyebaoxiu"/>
+
+        <ImageView
+            android:layout_marginTop="30dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/main_wuyelianxi"
+            android:src="@drawable/wuyelianxi"
+
+            app:layout_constraintLeft_toLeftOf="@id/main_wuyejiaofei"
+            app:layout_constraintTop_toBottomOf="@id/main_wuyejiaofei"/>
+
+        <TextView
+            android:id="@+id/main_lianxi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="物业联系"
+            app:layout_constraintTop_toBottomOf="@id/main_wuyelianxi"
+            app:layout_constraintLeft_toLeftOf="@id/main_wuyelianxi"/>
+
+        <ImageView
+            android:layout_marginTop="30dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/main_wuyetousu"
+            android:src="@drawable/wuyetousu"
+
+            app:layout_constraintLeft_toLeftOf="@id/main_wuyedingshui"
+            app:layout_constraintTop_toBottomOf="@id/main_wuyedingshui"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="物业投诉"
+            app:layout_constraintTop_toBottomOf="@id/main_wuyetousu"
+            app:layout_constraintLeft_toLeftOf="@id/main_wuyetousu"/>
+
+        <ImageView
+            android:layout_marginTop="30dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/main_wuyekuaidi"
+            android:src="@drawable/wuyekuaidi"
+
+            app:layout_constraintLeft_toLeftOf="@id/main_wuyezufang"
+            app:layout_constraintTop_toBottomOf="@id/main_wuyezufang"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="快递查询"
+            android:id="@+id/main_kuaidi"
+            app:layout_constraintTop_toBottomOf="@id/main_wuyekuaidi"
+            app:layout_constraintLeft_toLeftOf="@id/main_wuyekuaidi"/>
+
+        <ImageView
+            android:id="@+id/main_laba"
+            android:layout_marginTop="40dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/laba"
+
+            app:layout_constraintTop_toBottomOf="@id/main_wuyebaoxiu"
+            app:layout_constraintLeft_toLeftOf="@id/main_wuyebaoxiu"/>
+
+        <com.sunfusheng.marqueeview.MarqueeView
+            android:layout_marginLeft="30dp"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:singleLine="true"
+            android:focusable="true"
+            android:id="@+id/main_gonggao"
+
+            app:layout_constraintTop_toTopOf="@id/main_laba"
+            app:layout_constraintLeft_toRightOf="@id/main_laba"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/main_reclyclerview"
+            app:layout_constraintTop_toBottomOf="@id/main_gonggao"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

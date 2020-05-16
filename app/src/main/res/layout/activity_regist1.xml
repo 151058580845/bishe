@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/login_l1"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout
+            android:id="@+id/regist_login"
+            android:orientation="vertical"
+            android:layout_width="100dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:text="登陆"
+                android:textColor="@color/qqmiddlewhite"
+                android:textSize="20dp" />
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:background="@color/qqmiddlewhite"
+                android:layout_width="100dp"
+                android:layout_height="1dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginLeft="25dp"
+                android:textColor="@color/login_background"
+                android:textSize="20dp"
+                android:text="注册"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:background="@color/login_background"
+                android:layout_width="100dp"
+                android:layout_height="1dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/login_l2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="45dp"
+        android:background="#ffffff"
+
+        app:layout_constraintTop_toBottomOf="@+id/login_l1">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:maxLength="11"
+            android:digits="0123456789"
+            android:id="@+id/regist_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="手机号"
+            android:textColorHint="#f0f0f0"
+
+            app:met_clearButton="true"
+            app:met_maxCharacters="11"
+            app:met_baseColor="@color/black"
+            app:met_primaryColor="#982360"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/login_l3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="15dp"
+        android:background="#ffffff"
+        app:layout_constraintTop_toBottomOf="@+id/login_l2">
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:maxLength="20"
+            android:id="@+id/regist_yanzhengma_ed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:hint="验证码"
+            android:inputType="textPassword"
+            android:textColorHint="#f3f3f3"
+            android:background="@null"
+            android:layout_weight="4"
+
+            app:met_clearButton="true"
+            app:met_maxCharacters="15"
+            app:met_baseColor="@color/black"
+            app:met_primaryColor="#982360"
+            />
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/regist_yanzhengma"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:textSize="15dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/shape"
+            android:gravity="center"
+            android:text="获取验证码" />
+    </LinearLayout>
+
+
+
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/regist_shoujihao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="手机号注册"
+        android:layout_gravity="center"
+        android:layout_marginTop="85dp"
+        android:textSize="25dp"
+
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/regist_l3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="45dp"
+        android:background="#ffffff"
+
+        app:layout_constraintTop_toBottomOf="@+id/login_l2">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:maxLength="10"
+            android:id="@+id/regist_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="请输入昵称"
+            android:textColorHint="#f0f0f0"
+
+            app:met_clearButton="true"
+            app:met_maxCharacters="10"
+            app:met_baseColor="@color/black"
+            app:met_primaryColor="#982360"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/regist_l4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="45dp"
+        android:background="#ffffff"
+
+        app:layout_constraintTop_toBottomOf="@+id/regist_l3">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:maxLength="20"
+            android:id="@+id/regist_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="请输入密码"
+            android:textColorHint="#f0f0f0"
+
+            app:met_clearButton="true"
+            app:met_maxCharacters="15"
+            app:met_baseColor="@color/black"
+            app:met_primaryColor="#982360"
+            />
+    </LinearLayout>
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/regist_zhuce"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="65dp"
+        android:layout_marginRight="65dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/shape"
+        android:text="注册"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+
+        app:layout_constraintTop_toBottomOf="@+id/regist_l4"/>
+
+    <Button
+        android:id="@+id/regist_tijiao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="65dp"
+        android:layout_marginRight="65dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/shape"
+        android:text="提交"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/login_l3"/>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/regist_back"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginRight="30dp"
+        android:gravity="right"
+        android:textSize="20sp"
+        android:text="返回登录界面"
+
+        app:layout_constraintTop_toBottomOf="@+id/regist_l4"/>
+
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:gravity="bottom"
+        android:src="@drawable/login_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

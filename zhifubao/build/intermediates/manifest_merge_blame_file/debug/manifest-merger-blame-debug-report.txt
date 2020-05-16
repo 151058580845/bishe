@@ -1,0 +1,150 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.alipay.sdk.pay.demo"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="19"
+8-->E:\github_adnroid\test\liaotian\zhifubao\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->E:\github_adnroid\test\liaotian\zhifubao\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->E:\github_adnroid\test\liaotian\zhifubao\src\main\AndroidManifest.xml:8:5-67
+11-->E:\github_adnroid\test\liaotian\zhifubao\src\main\AndroidManifest.xml:8:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->E:\github_adnroid\test\liaotian\zhifubao\src\main\AndroidManifest.xml:9:5-79
+12-->E:\github_adnroid\test\liaotian\zhifubao\src\main\AndroidManifest.xml:9:22-76
+13    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+13-->E:\github_adnroid\test\liaotian\zhifubao\src\main\AndroidManifest.xml:10:5-76
+13-->E:\github_adnroid\test\liaotian\zhifubao\src\main\AndroidManifest.xml:10:22-73
+14
+15    <supports-screens
+15-->E:\github_adnroid\test\liaotian\zhifubao\src\main\AndroidManifest.xml:13:5-18:39
+16        android:anyDensity="true"
+16-->E:\github_adnroid\test\liaotian\zhifubao\src\main\AndroidManifest.xml:14:9-34
+17        android:largeScreens="true"
+17-->E:\github_adnroid\test\liaotian\zhifubao\src\main\AndroidManifest.xml:15:9-36
+18        android:normalScreens="true"
+18-->E:\github_adnroid\test\liaotian\zhifubao\src\main\AndroidManifest.xml:16:9-37
+19        android:resizeable="true"
+19-->E:\github_adnroid\test\liaotian\zhifubao\src\main\AndroidManifest.xml:17:9-34
+20        android:smallScreens="true" />
+20-->E:\github_adnroid\test\liaotian\zhifubao\src\main\AndroidManifest.xml:18:9-36
+21
+22    <application
+22-->E:\github_adnroid\test\liaotian\zhifubao\src\main\AndroidManifest.xml:20:5-41:19
+23        android:allowBackup="true"
+23-->E:\github_adnroid\test\liaotian\zhifubao\src\main\AndroidManifest.xml:21:9-35
+24        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+24-->[androidx.core:core:1.0.0] C:\Users\16401\.gradle\caches\transforms-2\files-2.1\c1e47ed8e6811033d2ad8d66664470bc\core-1.0.0\AndroidManifest.xml:22:18-86
+25        android:debuggable="true"
+26        android:label="@string/app_name"
+26-->E:\github_adnroid\test\liaotian\zhifubao\src\main\AndroidManifest.xml:23:9-41
+27        android:networkSecurityConfig="@xml/network_security_config"
+27-->E:\github_adnroid\test\liaotian\zhifubao\src\main\AndroidManifest.xml:22:9-69
+28        android:theme="@style/AppTheme" >
+28-->E:\github_adnroid\test\liaotian\zhifubao\src\main\AndroidManifest.xml:24:9-40
+29        <activity
+29-->E:\github_adnroid\test\liaotian\zhifubao\src\main\AndroidManifest.xml:25:9-34:20
+30            android:name="com.alipay.sdk.pay.demo.PayDemoActivity"
+30-->E:\github_adnroid\test\liaotian\zhifubao\src\main\AndroidManifest.xml:26:13-67
+31            android:icon="@drawable/msp_icon"
+31-->E:\github_adnroid\test\liaotian\zhifubao\src\main\AndroidManifest.xml:27:13-46
+32            android:label="@string/app_name" >
+32-->E:\github_adnroid\test\liaotian\zhifubao\src\main\AndroidManifest.xml:28:13-45
+33            <intent-filter>
+33-->E:\github_adnroid\test\liaotian\zhifubao\src\main\AndroidManifest.xml:29:13-33:29
+34                <action android:name="android.intent.action.MAIN" />
+34-->E:\github_adnroid\test\liaotian\zhifubao\src\main\AndroidManifest.xml:30:17-69
+34-->E:\github_adnroid\test\liaotian\zhifubao\src\main\AndroidManifest.xml:30:25-66
+35
+36                <category android:name="android.intent.category.LAUNCHER" />
+36-->E:\github_adnroid\test\liaotian\zhifubao\src\main\AndroidManifest.xml:32:17-77
+36-->E:\github_adnroid\test\liaotian\zhifubao\src\main\AndroidManifest.xml:32:27-74
+37            </intent-filter>
+38        </activity>
+39        <activity
+39-->E:\github_adnroid\test\liaotian\zhifubao\src\main\AndroidManifest.xml:35:9-40:20
+40            android:name="com.alipay.sdk.pay.demo.H5PayDemoActivity"
+40-->E:\github_adnroid\test\liaotian\zhifubao\src\main\AndroidManifest.xml:36:13-69
+41            android:configChanges="orientation|keyboardHidden|navigation"
+41-->E:\github_adnroid\test\liaotian\zhifubao\src\main\AndroidManifest.xml:37:13-74
+42            android:exported="false"
+42-->E:\github_adnroid\test\liaotian\zhifubao\src\main\AndroidManifest.xml:38:13-37
+43            android:screenOrientation="behind" >
+43-->E:\github_adnroid\test\liaotian\zhifubao\src\main\AndroidManifest.xml:39:13-47
+44        </activity>
+45
+46        <uses-library
+46-->[:alipaySdk-15.7.5-20200422171619:] C:\Users\16401\.gradle\caches\transforms-2\files-2.1\232557c523897be81ac340ee1efa3a6f\jetified-alipaySdk-15.7.5-20200422171619\AndroidManifest.xml:23:9-25:40
+47            android:name="org.apache.http.legacy"
+47-->[:alipaySdk-15.7.5-20200422171619:] C:\Users\16401\.gradle\caches\transforms-2\files-2.1\232557c523897be81ac340ee1efa3a6f\jetified-alipaySdk-15.7.5-20200422171619\AndroidManifest.xml:24:13-50
+48            android:required="false" />
+48-->[:alipaySdk-15.7.5-20200422171619:] C:\Users\16401\.gradle\caches\transforms-2\files-2.1\232557c523897be81ac340ee1efa3a6f\jetified-alipaySdk-15.7.5-20200422171619\AndroidManifest.xml:25:13-37
+49
+50        <activity
+50-->[:alipaySdk-15.7.5-20200422171619:] C:\Users\16401\.gradle\caches\transforms-2\files-2.1\232557c523897be81ac340ee1efa3a6f\jetified-alipaySdk-15.7.5-20200422171619\AndroidManifest.xml:27:9-31:20
+51            android:name="com.alipay.sdk.app.H5PayActivity"
+51-->[:alipaySdk-15.7.5-20200422171619:] C:\Users\16401\.gradle\caches\transforms-2\files-2.1\232557c523897be81ac340ee1efa3a6f\jetified-alipaySdk-15.7.5-20200422171619\AndroidManifest.xml:28:13-60
+52            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+52-->[:alipaySdk-15.7.5-20200422171619:] C:\Users\16401\.gradle\caches\transforms-2\files-2.1\232557c523897be81ac340ee1efa3a6f\jetified-alipaySdk-15.7.5-20200422171619\AndroidManifest.xml:29:13-85
+53            android:exported="false" >
+53-->[:alipaySdk-15.7.5-20200422171619:] C:\Users\16401\.gradle\caches\transforms-2\files-2.1\232557c523897be81ac340ee1efa3a6f\jetified-alipaySdk-15.7.5-20200422171619\AndroidManifest.xml:30:13-37
+54        </activity>
+55        <activity
+55-->[:alipaySdk-15.7.5-20200422171619:] C:\Users\16401\.gradle\caches\transforms-2\files-2.1\232557c523897be81ac340ee1efa3a6f\jetified-alipaySdk-15.7.5-20200422171619\AndroidManifest.xml:32:9-36:20
+56            android:name="com.alipay.sdk.app.H5AuthActivity"
+56-->[:alipaySdk-15.7.5-20200422171619:] C:\Users\16401\.gradle\caches\transforms-2\files-2.1\232557c523897be81ac340ee1efa3a6f\jetified-alipaySdk-15.7.5-20200422171619\AndroidManifest.xml:33:13-61
+57            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+57-->[:alipaySdk-15.7.5-20200422171619:] C:\Users\16401\.gradle\caches\transforms-2\files-2.1\232557c523897be81ac340ee1efa3a6f\jetified-alipaySdk-15.7.5-20200422171619\AndroidManifest.xml:34:13-85
+58            android:exported="false" >
+58-->[:alipaySdk-15.7.5-20200422171619:] C:\Users\16401\.gradle\caches\transforms-2\files-2.1\232557c523897be81ac340ee1efa3a6f\jetified-alipaySdk-15.7.5-20200422171619\AndroidManifest.xml:35:13-37
+59        </activity>
+60        <activity
+60-->[:alipaySdk-15.7.5-20200422171619:] C:\Users\16401\.gradle\caches\transforms-2\files-2.1\232557c523897be81ac340ee1efa3a6f\jetified-alipaySdk-15.7.5-20200422171619\AndroidManifest.xml:37:9-46:20
+61            android:name="com.alipay.sdk.app.PayResultActivity"
+61-->[:alipaySdk-15.7.5-20200422171619:] C:\Users\16401\.gradle\caches\transforms-2\files-2.1\232557c523897be81ac340ee1efa3a6f\jetified-alipaySdk-15.7.5-20200422171619\AndroidManifest.xml:38:13-64
+62            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+62-->[:alipaySdk-15.7.5-20200422171619:] C:\Users\16401\.gradle\caches\transforms-2\files-2.1\232557c523897be81ac340ee1efa3a6f\jetified-alipaySdk-15.7.5-20200422171619\AndroidManifest.xml:39:13-85
+63            android:exported="true"
+63-->[:alipaySdk-15.7.5-20200422171619:] C:\Users\16401\.gradle\caches\transforms-2\files-2.1\232557c523897be81ac340ee1efa3a6f\jetified-alipaySdk-15.7.5-20200422171619\AndroidManifest.xml:40:13-36
+64            android:launchMode="singleInstance"
+64-->[:alipaySdk-15.7.5-20200422171619:] C:\Users\16401\.gradle\caches\transforms-2\files-2.1\232557c523897be81ac340ee1efa3a6f\jetified-alipaySdk-15.7.5-20200422171619\AndroidManifest.xml:41:13-48
+65            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+65-->[:alipaySdk-15.7.5-20200422171619:] C:\Users\16401\.gradle\caches\transforms-2\files-2.1\232557c523897be81ac340ee1efa3a6f\jetified-alipaySdk-15.7.5-20200422171619\AndroidManifest.xml:42:13-72
+66            <intent-filter>
+66-->[:alipaySdk-15.7.5-20200422171619:] C:\Users\16401\.gradle\caches\transforms-2\files-2.1\232557c523897be81ac340ee1efa3a6f\jetified-alipaySdk-15.7.5-20200422171619\AndroidManifest.xml:43:13-45:29
+67                <category android:name="android.intent.category.DEFAULT" />
+67-->[:alipaySdk-15.7.5-20200422171619:] C:\Users\16401\.gradle\caches\transforms-2\files-2.1\232557c523897be81ac340ee1efa3a6f\jetified-alipaySdk-15.7.5-20200422171619\AndroidManifest.xml:44:17-76
+67-->[:alipaySdk-15.7.5-20200422171619:] C:\Users\16401\.gradle\caches\transforms-2\files-2.1\232557c523897be81ac340ee1efa3a6f\jetified-alipaySdk-15.7.5-20200422171619\AndroidManifest.xml:44:27-73
+68            </intent-filter>
+69        </activity>
+70        <activity
+70-->[:alipaySdk-15.7.5-20200422171619:] C:\Users\16401\.gradle\caches\transforms-2\files-2.1\232557c523897be81ac340ee1efa3a6f\jetified-alipaySdk-15.7.5-20200422171619\AndroidManifest.xml:47:9-52:20
+71            android:name="com.alipay.sdk.app.AlipayResultActivity"
+71-->[:alipaySdk-15.7.5-20200422171619:] C:\Users\16401\.gradle\caches\transforms-2\files-2.1\232557c523897be81ac340ee1efa3a6f\jetified-alipaySdk-15.7.5-20200422171619\AndroidManifest.xml:48:13-67
+72            android:exported="true"
+72-->[:alipaySdk-15.7.5-20200422171619:] C:\Users\16401\.gradle\caches\transforms-2\files-2.1\232557c523897be81ac340ee1efa3a6f\jetified-alipaySdk-15.7.5-20200422171619\AndroidManifest.xml:49:13-36
+73            android:launchMode="singleTask"
+73-->[:alipaySdk-15.7.5-20200422171619:] C:\Users\16401\.gradle\caches\transforms-2\files-2.1\232557c523897be81ac340ee1efa3a6f\jetified-alipaySdk-15.7.5-20200422171619\AndroidManifest.xml:50:13-44
+74            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+74-->[:alipaySdk-15.7.5-20200422171619:] C:\Users\16401\.gradle\caches\transforms-2\files-2.1\232557c523897be81ac340ee1efa3a6f\jetified-alipaySdk-15.7.5-20200422171619\AndroidManifest.xml:51:13-72
+75        </activity>
+76        <activity
+76-->[:alipaySdk-15.7.5-20200422171619:] C:\Users\16401\.gradle\caches\transforms-2\files-2.1\232557c523897be81ac340ee1efa3a6f\jetified-alipaySdk-15.7.5-20200422171619\AndroidManifest.xml:53:9-59:20
+77            android:name="com.alipay.sdk.app.H5OpenAuthActivity"
+77-->[:alipaySdk-15.7.5-20200422171619:] C:\Users\16401\.gradle\caches\transforms-2\files-2.1\232557c523897be81ac340ee1efa3a6f\jetified-alipaySdk-15.7.5-20200422171619\AndroidManifest.xml:54:13-65
+78            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+78-->[:alipaySdk-15.7.5-20200422171619:] C:\Users\16401\.gradle\caches\transforms-2\files-2.1\232557c523897be81ac340ee1efa3a6f\jetified-alipaySdk-15.7.5-20200422171619\AndroidManifest.xml:55:13-85
+79            android:exported="false"
+79-->[:alipaySdk-15.7.5-20200422171619:] C:\Users\16401\.gradle\caches\transforms-2\files-2.1\232557c523897be81ac340ee1efa3a6f\jetified-alipaySdk-15.7.5-20200422171619\AndroidManifest.xml:56:13-37
+80            android:screenOrientation="behind"
+80-->[:alipaySdk-15.7.5-20200422171619:] C:\Users\16401\.gradle\caches\transforms-2\files-2.1\232557c523897be81ac340ee1efa3a6f\jetified-alipaySdk-15.7.5-20200422171619\AndroidManifest.xml:57:13-47
+81            android:windowSoftInputMode="adjustResize|stateHidden" >
+81-->[:alipaySdk-15.7.5-20200422171619:] C:\Users\16401\.gradle\caches\transforms-2\files-2.1\232557c523897be81ac340ee1efa3a6f\jetified-alipaySdk-15.7.5-20200422171619\AndroidManifest.xml:58:13-67
+82        </activity>
+83    </application>
+84
+85</manifest>

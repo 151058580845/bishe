@@ -1,0 +1,55 @@
+-- Merging decision tree log ---
+manifest
+ADDED from E:\github_adnroid\test\liaotian\image_select\src\main\AndroidManifest.xml:1:1-16:12
+INJECTED from E:\github_adnroid\test\liaotian\image_select\src\main\AndroidManifest.xml:1:1-16:12
+INJECTED from E:\github_adnroid\test\liaotian\image_select\src\main\AndroidManifest.xml:1:1-16:12
+INJECTED from E:\github_adnroid\test\liaotian\image_select\src\main\AndroidManifest.xml:1:1-16:12
+INJECTED from E:\github_adnroid\test\liaotian\image_select\src\main\AndroidManifest.xml:1:1-16:12
+INJECTED from E:\github_adnroid\test\liaotian\image_select\src\main\AndroidManifest.xml:1:1-16:12
+INJECTED from E:\github_adnroid\test\liaotian\image_select\src\main\AndroidManifest.xml:1:1-16:12
+	package
+		ADDED from E:\github_adnroid\test\liaotian\image_select\src\main\AndroidManifest.xml:2:5-35
+		INJECTED from E:\github_adnroid\test\liaotian\image_select\src\main\AndroidManifest.xml
+		INJECTED from E:\github_adnroid\test\liaotian\image_select\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from E:\github_adnroid\test\liaotian\image_select\src\main\AndroidManifest.xml
+		ADDED from E:\github_adnroid\test\liaotian\image_select\src\main\AndroidManifest.xml:1:1-16:12
+		INJECTED from E:\github_adnroid\test\liaotian\image_select\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from E:\github_adnroid\test\liaotian\image_select\src\main\AndroidManifest.xml
+		ADDED from E:\github_adnroid\test\liaotian\image_select\src\main\AndroidManifest.xml:1:1-16:12
+		INJECTED from E:\github_adnroid\test\liaotian\image_select\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from E:\github_adnroid\test\liaotian\image_select\src\main\AndroidManifest.xml:1:11-69
+application
+ADDED from E:\github_adnroid\test\liaotian\image_select\src\main\AndroidManifest.xml:4:5-14:19
+activity#org.lym.image.select.ui.SelectImageActivity
+ADDED from E:\github_adnroid\test\liaotian\image_select\src\main\AndroidManifest.xml:5:9-7:62
+	android:configChanges
+		ADDED from E:\github_adnroid\test\liaotian\image_select\src\main\AndroidManifest.xml:7:13-59
+	android:name
+		ADDED from E:\github_adnroid\test\liaotian\image_select\src\main\AndroidManifest.xml:6:13-51
+activity#org.lym.image.select.ui.PreviewImageActivity
+ADDED from E:\github_adnroid\test\liaotian\image_select\src\main\AndroidManifest.xml:8:9-61
+	android:name
+		ADDED from E:\github_adnroid\test\liaotian\image_select\src\main\AndroidManifest.xml:8:19-58
+activity#org.lym.image.select.ui.CameraActivity
+ADDED from E:\github_adnroid\test\liaotian\image_select\src\main\AndroidManifest.xml:9:9-12:15
+	android:theme
+		ADDED from E:\github_adnroid\test\liaotian\image_select\src\main\AndroidManifest.xml:11:13-63
+	android:name
+		ADDED from E:\github_adnroid\test\liaotian\image_select\src\main\AndroidManifest.xml:10:13-46
+uses-sdk
+INJECTED from E:\github_adnroid\test\liaotian\image_select\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from E:\github_adnroid\test\liaotian\image_select\src\main\AndroidManifest.xml
+INJECTED from E:\github_adnroid\test\liaotian\image_select\src\main\AndroidManifest.xml
+INJECTED from E:\github_adnroid\test\liaotian\image_select\src\main\AndroidManifest.xml
+INJECTED from E:\github_adnroid\test\liaotian\image_select\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from E:\github_adnroid\test\liaotian\image_select\src\main\AndroidManifest.xml
+		ADDED from E:\github_adnroid\test\liaotian\image_select\src\main\AndroidManifest.xml
+		INJECTED from E:\github_adnroid\test\liaotian\image_select\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from E:\github_adnroid\test\liaotian\image_select\src\main\AndroidManifest.xml
+		ADDED from E:\github_adnroid\test\liaotian\image_select\src\main\AndroidManifest.xml
+		INJECTED from E:\github_adnroid\test\liaotian\image_select\src\main\AndroidManifest.xml

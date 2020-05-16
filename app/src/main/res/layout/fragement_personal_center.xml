@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android = "http://schemas.android.com/apk/res/android"
+        xmlns:app = "http://schemas.android.com/apk/res-auto"
+        style = "@style/MatchMatch"
+        android:fitsSystemWindows = "true"
+        android:background = "@color/white"
+        android:orientation = "vertical"
+        >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            style = "@style/MatchMatch"
+            >
+
+        <LinearLayout
+                style = "@style/MatchMatch"
+                android:background = "@color/white"
+                android:orientation = "vertical"
+                android:paddingLeft = "32dp"
+                android:paddingTop = "16dp"
+                android:paddingRight = "32dp"
+
+                app:layout_constraintStart_toStartOf = "parent"
+                app:layout_constraintTop_toTopOf = "parent"
+                >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    style = "@style/MatchWrap"
+                    android:background = "@color/white"
+                    >
+
+                <ImageView
+                        android:id = "@+id/myinfrom_touxiang"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginStart = "32dp"
+                        android:layout_marginTop = "32dp"
+                        android:background = "@drawable/touxiang1"
+                        app:layout_constraintStart_toStartOf = "parent"
+                        app:layout_constraintTop_toTopOf = "parent"
+                        />
+
+                <TextView
+                        android:id = "@+id/tb_personal_center_name"
+                        style = "@style/WrapWrap"
+                        android:layout_marginStart = "32dp"
+                        android:layout_marginTop = "32dp"
+                        android:text = "奚梦瑶"
+                        app:layout_constraintStart_toEndOf = "@+id/myinfrom_touxiang"
+                        app:layout_constraintTop_toTopOf = "parent"
+                        />
+
+                <TextView
+                        android:id = "@+id/tb_personal_center_sex"
+                        style = "@style/WrapWrap"
+                        android:layout_marginStart = "8dp"
+                        android:layout_marginTop = "32dp"
+                        android:text = "女"
+                        app:layout_constraintStart_toEndOf = "@+id/tb_personal_center_name"
+                        app:layout_constraintTop_toTopOf = "parent"
+                        />
+
+                <TextView
+                        android:id = "@+id/tb_personal_center_birthday"
+                        style = "@style/WrapWrap"
+                        android:layout_marginStart = "32dp"
+                        android:text = "2019-09-21"
+
+                        app:layout_constraintBottom_toTopOf = "@+id/view"
+                        app:layout_constraintStart_toEndOf = "@+id/myinfrom_touxiang"
+                        app:layout_constraintTop_toBottomOf = "@+id/tb_personal_center_name"
+                        />
+
+
+                <View
+                        android:id = "@+id/view"
+                        android:layout_width = "match_parent"
+                        android:layout_height = "1dp"
+                        android:layout_marginStart = "32dp"
+                        android:layout_marginTop = "16dp"
+                        android:layout_marginEnd = "32dp"
+                        android:background = "@color/white"
+                        app:layout_constraintEnd_toEndOf = "parent"
+                        app:layout_constraintHorizontal_bias = "0.0"
+                        app:layout_constraintStart_toStartOf = "parent"
+                        app:layout_constraintTop_toBottomOf = "@+id/myinfrom_touxiang"
+                        />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id = "@+id/cl_personal_info"
+                    style = "@style/MatchWrap"
+                    android:layout_marginTop = "8dp"
+                    android:background = "@color/white"
+                    >
+
+                <ImageView
+                        android:id = "@+id/imageView2"
+                        style = "@style/biaozhi"
+                        android:layout_marginStart = "16dp"
+                        android:layout_marginTop = "16dp"
+                        android:layout_marginBottom = "16dp"
+                        android:background = "@drawable/icon_user"
+                        app:layout_constraintBottom_toBottomOf = "parent"
+                        app:layout_constraintStart_toStartOf = "parent"
+                        app:layout_constraintTop_toTopOf = "parent"
+                        />
+
+                <ImageView
+                        android:id = "@+id/imageView3"
+                        style = "@style/houjian"
+                        android:layout_marginTop = "16dp"
+                        android:layout_marginEnd = "16dp"
+                        android:layout_marginBottom = "16dp"
+                        app:layout_constraintBottom_toBottomOf = "parent"
+                        app:layout_constraintEnd_toEndOf = "parent"
+                        app:layout_constraintTop_toTopOf = "parent"
+                        app:srcCompat = "@drawable/icon_more"
+                        />
+
+                <TextView
+                        android:id = "@+id/textView3"
+                        style = "@style/WrapWrap"
+                        android:layout_marginStart = "32dp"
+                        android:layout_marginTop = "16dp"
+                        android:layout_marginBottom = "16dp"
+                        android:text = "个人信息"
+                        app:layout_constraintBottom_toBottomOf = "parent"
+                        app:layout_constraintStart_toEndOf = "@+id/imageView2"
+                        app:layout_constraintTop_toTopOf = "parent"
+                        />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id = "@+id/cl_personal_pw"
+                    style = "@style/MatchWrap"
+                    android:layout_marginTop = "8dp"
+                    android:background = "@color/white"
+                    >
+
+                <ImageView
+                        android:id = "@+id/imageView4"
+                        style = "@style/biaozhi"
+                        android:layout_marginStart = "16dp"
+                        android:layout_marginTop = "16dp"
+                        android:layout_marginBottom = "16dp"
+                        android:background = "@drawable/icon_reset"
+                        app:layout_constraintBottom_toBottomOf = "parent"
+                        app:layout_constraintStart_toStartOf = "parent"
+                        app:layout_constraintTop_toTopOf = "parent"
+                        />
+
+                <ImageView
+                        style = "@style/houjian"
+                        android:layout_marginTop = "16dp"
+                        android:layout_marginEnd = "16dp"
+                        android:layout_marginBottom = "16dp"
+                        app:layout_constraintBottom_toBottomOf = "parent"
+                        app:layout_constraintEnd_toEndOf = "parent"
+                        app:layout_constraintTop_toTopOf = "parent"
+                        app:srcCompat = "@drawable/icon_more"
+                        />
+
+                <TextView
+                        style = "@style/WrapWrap"
+                        android:layout_marginStart = "32dp"
+                        android:layout_marginTop = "16dp"
+                        android:layout_marginBottom = "16dp"
+                        android:text = "密码重置"
+                        app:layout_constraintBottom_toBottomOf = "parent"
+                        app:layout_constraintStart_toEndOf = "@+id/imageView4"
+                        app:layout_constraintTop_toTopOf = "parent"
+                        />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:visibility="gone"
+                    android:id = "@+id/cl_about"
+                    style = "@style/MatchWrap"
+                    android:layout_marginTop = "8dp"
+                    android:background = "@color/white"
+                    >
+
+                <ImageView
+                        android:id = "@+id/imageView5"
+                        style = "@style/WrapWrap"
+                        android:layout_marginStart = "16dp"
+                        android:layout_marginTop = "16dp"
+                        android:layout_marginBottom = "16dp"
+                        android:background = "@drawable/icon_about"
+                        app:layout_constraintBottom_toBottomOf = "parent"
+                        app:layout_constraintStart_toStartOf = "parent"
+                        app:layout_constraintTop_toTopOf = "parent"
+                        />
+
+                <ImageView
+                        style = "@style/houjian"
+                        android:layout_marginTop = "16dp"
+                        android:layout_marginEnd = "16dp"
+                        android:layout_marginBottom = "16dp"
+                        app:layout_constraintBottom_toBottomOf = "parent"
+                        app:layout_constraintEnd_toEndOf = "parent"
+                        app:layout_constraintTop_toTopOf = "parent"
+                        app:srcCompat = "@drawable/icon_more"
+                        />
+
+                <TextView
+                        style = "@style/WrapWrap"
+                        android:layout_marginStart = "32dp"
+                        android:layout_marginTop = "16dp"
+                        android:layout_marginBottom = "16dp"
+                        android:text = "关于"
+                        app:layout_constraintBottom_toBottomOf = "parent"
+                        app:layout_constraintStart_toEndOf = "@+id/imageView5"
+                        app:layout_constraintTop_toTopOf = "parent"
+                        />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:visibility="gone"
+                    android:id = "@+id/cl_help"
+                    style = "@style/MatchWrap"
+                    android:layout_marginTop = "8dp"
+                    android:background = "@color/white"
+                    >
+
+                <ImageView
+                        android:id = "@+id/imageView6"
+                        style = "@style/WrapWrap"
+                        android:layout_marginStart = "16dp"
+                        android:layout_marginTop = "16dp"
+                        android:layout_marginBottom = "16dp"
+                        android:background = "@drawable/icon_help"
+                        app:layout_constraintBottom_toBottomOf = "parent"
+                        app:layout_constraintStart_toStartOf = "parent"
+                        app:layout_constraintTop_toTopOf = "parent"
+                        />
+
+                <ImageView
+                        style = "@style/houjian"
+                        android:layout_marginTop = "16dp"
+                        android:layout_marginEnd = "16dp"
+                        android:layout_marginBottom = "16dp"
+                        app:layout_constraintBottom_toBottomOf = "parent"
+                        app:layout_constraintEnd_toEndOf = "parent"
+                        app:layout_constraintTop_toTopOf = "parent"
+                        app:srcCompat = "@drawable/icon_more"
+                        />
+
+                <TextView
+                        style = "@style/WrapWrap"
+                        android:layout_marginStart = "32dp"
+                        android:layout_marginTop = "16dp"
+                        android:layout_marginBottom = "16dp"
+                        android:text = "帮助"
+                        app:layout_constraintBottom_toBottomOf = "parent"
+                        app:layout_constraintStart_toEndOf = "@+id/imageView6"
+                        app:layout_constraintTop_toTopOf = "parent"
+                        />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+        <Button
+                android:id="@+id/loguot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background = "@drawable/bt_logout"
+                android:layout_marginBottom = "30dp"
+                android:text="退出"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+
+                app:layout_constraintBottom_toBottomOf = "parent"
+                app:layout_constraintStart_toStartOf = "parent"
+                app:layout_constraintEnd_toEndOf = "parent"
+                app:layout_constraintWidth_percent = "0.75"
+                />
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:gravity="bottom"
+            android:src="@drawable/login_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

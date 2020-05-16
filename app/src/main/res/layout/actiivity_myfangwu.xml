@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/myfangwu_toolbar"
+
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_gravity="center"
+            android:text="我的房产"
+            android:textSize="20dp"
+            android:id="@+id/addfuwu_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </androidx.appcompat.widget.Toolbar>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CDCDB4"
+
+        app:layout_constraintTop_toBottomOf="@+id/myfangwu_toolbar"/>
+
+    <ImageView
+        android:id="@+id/myfangwu_image"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/fangzi"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintTop_toBottomOf="@+id/myfangwu_toolbar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <TextView
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/myfangwu_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="xx小区是的都是都是都是"
+
+        app:layout_constraintTop_toTopOf="@+id/myfangwu_image"
+        app:layout_constraintLeft_toRightOf="@+id/myfangwu_image"/>
+
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:textSize="15dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/myfangwu_shi"
+        android:layout_marginRight="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#CDCDB4"
+        android:text="三室二厅"
+
+        app:layout_constraintTop_toTopOf="@+id/myfangwu_image"
+        app:layout_constraintBottom_toBottomOf="@+id/myfangwu_image"
+        app:layout_constraintLeft_toRightOf="@+id/myfangwu_image"/>
+
+    <TextView
+        android:background="#8EE5EE"
+        android:textSize="13dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/myfangwu_kaojin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#00CDCD"
+        android:text="靠近地铁"
+
+        app:layout_constraintBottom_toBottomOf="@+id/myfangwu_image"
+        app:layout_constraintLeft_toRightOf="@+id/myfangwu_image"/>
+
+
+    <TextView
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/myfangwu_jiage"
+        android:layout_marginRight="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/red"
+        android:text="320万"
+
+        app:layout_constraintTop_toTopOf="@+id/myfangwu_image"
+        app:layout_constraintBottom_toBottomOf="@+id/myfangwu_image"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:visibility="gone"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/myfangwu_zujin"
+        android:layout_marginRight="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="租金："
+
+        app:layout_constraintTop_toTopOf="@+id/myfangwu_image"
+        app:layout_constraintBottom_toBottomOf="@+id/myfangwu_image"
+        app:layout_constraintRight_toLeftOf="@+id/myfangwu_jiage"/>
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:text="房子设计图"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@+id/myfangwu_image"
+        app:layout_constraintTop_toBottomOf="@+id/myfangwu_image"
+        />
+
+    <ImageView
+        android:id="@+id/myfangwu_sheji"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/fangzishejitu"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        app:layout_constraintLeft_toLeftOf="@+id/myfangwu_kaojin"
+        app:layout_constraintTop_toBottomOf="@+id/myfangwu_image"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/gainsboro"
+        app:layout_constraintTop_toBottomOf="@+id/myfangwu_sheji"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginTop="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/myfangwu_c1"
+        app:layout_constraintTop_toBottomOf="@+id/myfangwu_sheji">
+
+        <TextView
+            android:id="@+id/myfangwu_c1_t"
+            android:layout_marginLeft="20dp"
+            android:textSize="18dp"
+            android:text="编辑房源"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <ImageView
+            android:src="@drawable/right"
+            android:layout_marginRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gainsboro"
+        app:layout_constraintTop_toBottomOf="@+id/myfangwu_c1"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/myfangwu_c2"
+        app:layout_constraintTop_toBottomOf="@+id/myfangwu_c1">
+
+        <TextView
+
+            android:layout_marginLeft="20dp"
+            android:textSize="18dp"
+            android:text="定价"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <ImageView
+            android:src="@drawable/right"
+            android:layout_marginRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gainsboro"
+        app:layout_constraintTop_toBottomOf="@+id/myfangwu_c2"/>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/myfangwu_c3"
+        app:layout_constraintTop_toBottomOf="@+id/myfangwu_c2">
+
+        <TextView
+
+            android:layout_marginLeft="20dp"
+            android:textSize="18dp"
+            android:text="买家报价"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <ImageView
+            android:src="@drawable/right"
+            android:layout_marginRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gainsboro"
+        app:layout_constraintTop_toBottomOf="@+id/myfangwu_c3"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/myfangwu_c4"
+        app:layout_constraintTop_toBottomOf="@+id/myfangwu_c3">
+
+        <TextView
+
+            android:layout_marginLeft="20dp"
+            android:textSize="18dp"
+            android:text="出租"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <ImageView
+            android:src="@drawable/right"
+            android:layout_marginRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gainsboro"
+        app:layout_constraintTop_toBottomOf="@+id/myfangwu_c4"/>
+
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:gravity="bottom"
+        android:src="@drawable/login_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

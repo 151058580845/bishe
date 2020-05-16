@@ -1,0 +1,2 @@
+include ':app', 'caidan', ':image_select', ':XRadioGroup', ':zhifubao', ':alipaySdk-15.7.5-20200422171619'
+rootProject.name='zhihuishequ'

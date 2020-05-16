@@ -1,0 +1,32 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="org.lym.image.select"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="15"
+8-->E:\github_adnroid\test\liaotian\image_select\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->E:\github_adnroid\test\liaotian\image_select\src\main\AndroidManifest.xml
+10
+11    <application>
+11-->E:\github_adnroid\test\liaotian\image_select\src\main\AndroidManifest.xml:4:5-14:19
+12        <activity
+12-->E:\github_adnroid\test\liaotian\image_select\src\main\AndroidManifest.xml:5:9-7:62
+13            android:name="org.lym.image.select.ui.SelectImageActivity"
+13-->E:\github_adnroid\test\liaotian\image_select\src\main\AndroidManifest.xml:6:13-51
+14            android:configChanges="orientation|screenSize" />
+14-->E:\github_adnroid\test\liaotian\image_select\src\main\AndroidManifest.xml:7:13-59
+15        <activity android:name="org.lym.image.select.ui.PreviewImageActivity" />
+15-->E:\github_adnroid\test\liaotian\image_select\src\main\AndroidManifest.xml:8:9-61
+15-->E:\github_adnroid\test\liaotian\image_select\src\main\AndroidManifest.xml:8:19-58
+16        <activity
+16-->E:\github_adnroid\test\liaotian\image_select\src\main\AndroidManifest.xml:9:9-12:15
+17            android:name="org.lym.image.select.ui.CameraActivity"
+17-->E:\github_adnroid\test\liaotian\image_select\src\main\AndroidManifest.xml:10:13-46
+18            android:theme="@style/Theme.AppCompat.NoActionBar" />
+18-->E:\github_adnroid\test\liaotian\image_select\src\main\AndroidManifest.xml:11:13-63
+19    </application>
+20
+21</manifest>

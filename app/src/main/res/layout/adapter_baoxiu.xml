@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/baoxiu_all"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/baoxiu_danhao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="单号" />
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/baoxiu_shijian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="时间" />
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/baoxiu_wujian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="物件" />
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/baoxiu_jieguo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="结果" />
+</LinearLayout>

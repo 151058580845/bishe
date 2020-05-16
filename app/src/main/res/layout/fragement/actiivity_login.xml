@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/sha"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="账号密码登录"
+        android:layout_gravity="center"
+        android:layout_marginTop="85dp"
+        android:textColor="#ffffff"
+        android:textSize="30sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="15dp"
+        android:background="#ffffff">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:maxLength="11"
+            android:digits="0123456789"
+            android:id="@+id/login_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="请输入手机号"
+            android:textColorHint="#f0f0f0"
+            android:background="@null"
+
+            app:met_hideUnderline="true"
+            app:met_clearButton="true"
+            app:met_maxCharacters="11"
+            app:met_baseColor="#0056d3"
+            app:met_primaryColor="#982360"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="15dp"
+        android:background="#ffffff">
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:maxLength="15"
+            android:id="@+id/login_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:textColorHint="#f3f3f3"
+            android:background="@null"
+
+            app:met_hideUnderline="true"
+            app:met_clearButton="true"
+            app:met_maxCharacters="15"
+            app:met_baseColor="#0056d3"
+            app:met_primaryColor="#982360"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/login_duanxin"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:gravity="right"
+        android:textSize="20sp"
+        android:text="短信验证码登录"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+
+            android:id="@+id/login_login"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="65dp"
+            android:layout_marginRight="65dp"
+            android:layout_marginTop="15dp"
+            android:background="#009393"
+            android:text="登录"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/login_regist"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="65dp"
+            android:layout_marginTop="15dp"
+            android:background="#009393"
+            android:text="注册"
+            android:textColor="#ffffff"
+            android:textSize="20sp"  />
+    </LinearLayout>
+
+</LinearLayout>

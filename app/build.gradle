@@ -1,0 +1,117 @@
+apply plugin: 'com.android.application'
+apply plugin: 'realm-android'
+apply plugin: 'com.mob.sdk'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+    defaultConfig {
+        applicationId "com.example.liaotian"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+        repositories {
+            flatDir {
+                dirs 'libs'
+            }
+        }
+    }
+
+    signingConfigs{
+        keystore{
+            keyAlias 'android_keystore'
+            keyPassword 'sh131211'
+            storeFile file('D:/project/keystore')
+            storePassword 'sh131211'
+        }
+    }
+    MobSDK {
+        appKey "2d73ba181f85c"
+        appSecret "a74f72bfadbaf0245724bab29b6ed8d1"
+        SMSSDK {}
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+
+    sourceSets{
+        main{
+            jniLibs.srcDir 'libs'
+            jni.srcDirs = []    //disable automatic ndk-build
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+    implementation 'org.xutils:xutils:3.5.0'
+    //注解
+    implementation 'cn.bingoogolapple:bga-banner:3.0.0@aar'
+    //引导页，轮播图
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'org.greenrobot:eventbus:3.1.1'
+    //事件监听
+    implementation 'com.squareup.okhttp3:okhttp:4.2.0'
+    //网路加载
+    //   implementation 'com.loopj.android:android-async-http:1.4.10'    //异步网络加载
+    implementation 'com.alibaba:fastjson:1.1.71.android'
+    //阿里云的json
+    implementation 'com.google.code.gson:gson:2.6.2'
+    //谷歌的JSON
+    implementation 'com.rengwuxian.materialedittext:library:2.1.4'
+    //edittext库
+    implementation files('libs/SwitchLayout1.0.jar')
+    //切换动画库
+    implementation 'com.github.arcadefire:nice-spinner:1.4.4'
+    //下拉spinner
+    //  implementation 'com.jaredrummler:material-spinner:1.3.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    //constraintlayout布局
+    implementation 'com.sunfusheng:MarqueeView:1.4.1'
+    //textview跑马灯
+    implementation files('libs/BaiduLBS_Android.jar')
+    implementation 'com.github.tbruyelle:rxpermissions:0.10.2'
+    //动态权限申请
+    implementation 'io.reactivex.rxjava2:rxjava:2.0.2'
+    implementation project(path: ':caidan')     //侧部菜单
+
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'       //列表
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.46'
+
+    implementation 'com.github.bumptech.glide:glide:4.11.0'         //图片处理
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+
+    implementation 'com.contrarywind:Android-PickerView:4.1.9'      //多级联动选择器
+
+    implementation 'com.alibaba:fastjson:1.2.10'        //json解析
+
+    implementation 'com.github.XXQAQ:FasterDialog:1.30.0'      //dialog弹窗
+    implementation 'com.afollestad.material-dialogs:core:0.9.6.0'
+    implementation project(path: ':image_select')
+
+    implementation 'top.zibin:Luban:1.1.8'  //压缩
+
+//    implementation 'com.afollestad.material-dialogs:core:3.2.1'//dialog弹窗
+    implementation 'com.github.LuckSiege.PictureSelector:picture_library:v2.5.2'
+    implementation project(path: ':XRadioGroup')
+//    implementation project(path: ':alipaySdk-15.7.5-20200422171619')
+
+    implementation 'com.alipay.sdk:alipay-sdk-java:4.9.124.ALL'
+    implementation project(path: ':alipaySdk-15.7.5-20200422171619')
+//    implementation project(path: ':imageselector')
+}

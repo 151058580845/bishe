@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">zhihuishequ</string>
+    <string name="action_settings">Settings</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <string name="zhangdan">"物业账单"</string>
+    <string name="jiaofei">物业缴费</string>
+    <string name="dianfei">电费</string>
+    <string name="shuifei">水费</string>
+    <string name="wuyefei">物业费</string>
+    <string name="chuzu">房屋出租</string>
+</resources>

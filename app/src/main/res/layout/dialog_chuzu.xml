@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/weixiu_toolbar">
+
+        <TextView
+            android:layout_gravity="center"
+            android:text="出租"
+            android:textSize="20dp"
+            android:id="@+id/weixiu_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/dialog_fangyuan_l1"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_marginLeft="50dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"
+            android:textSize="18dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="报价" />
+
+        <EditText
+            android:id="@+id/dialog_fangyuan_j1"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"
+            android:textSize="18dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:hint="报价" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/dialog_fangyuan_l2"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_marginLeft="50dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"
+            android:textSize="18dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="内容" />
+
+        <EditText
+            android:id="@+id/dialog_fangyuan_j2"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"
+            android:textSize="18dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:hint="内容" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dialog_fangyuan_l3"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_marginLeft="50dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"
+            android:textSize="18dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="联系方式" />
+
+        <EditText
+            android:id="@+id/dialog_fangyuan_j3"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"
+            android:textSize="18dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:hint="手机" />
+    </LinearLayout>
+
+
+
+    <Button
+        android:text="发布"
+        android:id="@+id/dialog_fangyuan_submit"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

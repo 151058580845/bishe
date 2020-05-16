@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/weixiu_toolbar">
+
+        <TextView
+            android:layout_gravity="center"
+            android:text="修改房源信息"
+            android:textSize="20dp"
+            android:id="@+id/weixiu_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/dialog_fangyuan_c1"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"
+            android:textSize="18dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="房子出租：" />
+
+       <me.shihao.library.XRadioGroup
+           android:id="@+id/dialog_fangyuan_r1"
+           android:orientation="horizontal"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <RadioButton
+               android:id="@+id/dialog_fangyuan_b1"
+               android:text="整租"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+           <RadioButton
+               android:id="@+id/dialog_fangyuan_b2"
+               android:layout_marginLeft="10dp"
+               android:text="合租"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+
+       </me.shihao.library.XRadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_marginRight="20dp"
+            android:textSize="18dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="朝向：" />
+
+        <me.shihao.library.XRadioGroup
+            android:id="@+id/dialog_fangyuan_r2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/dialog_fangyuan_b3"
+                android:text="东"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <RadioButton
+                android:id="@+id/dialog_fangyuan_b4"
+                android:text="南"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <RadioButton
+                android:id="@+id/dialog_fangyuan_b5"
+                android:text="西"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <RadioButton
+                android:id="@+id/dialog_fangyuan_b6"
+                android:text="北"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </me.shihao.library.XRadioGroup>
+
+    </LinearLayout>
+
+    <Button
+        android:text="确定"
+        android:id="@+id/dialog_fangyuan_submit"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

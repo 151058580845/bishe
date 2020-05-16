@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/chuzu_toolbar"
+
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_gravity="center"
+            android:text="@string/chuzu"
+            android:textSize="20dp"
+            android:id="@+id/chuzu_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </androidx.appcompat.widget.Toolbar>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CDCDB4"
+        app:layout_constraintTop_toBottomOf="@+id/chuzu_toolbar"/>
+
+    <LinearLayout
+        android:id="@+id/chuzu_bottom"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+
+        <LinearLayout
+            android:background="@color/ll_person"
+            android:id="@+id/chuzu_l1"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/zufang"
+                android:id="@+id/chuzu_zufang"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:scaleType="fitCenter"
+                android:text="我要租房"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"/>
+            <TextView
+                android:gravity="center"
+                android:textSize="15dp"
+                android:text="我要找房"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/chuzu_l2"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/chuzu_chuzu"
+                android:scaleType="fitCenter"
+                android:textSize="20dp"
+                android:src="@drawable/chuzu"
+                android:text="我要出租"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"/>
+            <TextView
+                android:gravity="center"
+                android:textSize="15dp"
+                android:text="我要出租"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <!--<androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chuzu_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:visibility="gone"
+        android:id="@+id/zufang_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>-->
+    <FrameLayout
+        android:id="@+id/fragement_fangwu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+
+        app:layout_constraintTop_toBottomOf="@+id/chuzu_toolbar"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

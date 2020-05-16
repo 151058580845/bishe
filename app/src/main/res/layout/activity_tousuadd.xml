@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/qianhui"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tousu_toolbar">
+
+        <TextView
+            android:layout_gravity="center"
+            android:text="新增投诉"
+            android:textSize="20dp"
+            android:id="@+id/baoxiu_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/tousu_delete"
+            android:layout_marginRight="30dp"
+            android:layout_gravity="end"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/delete"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CDCDB4"
+
+        app:layout_constraintTop_toBottomOf="@+id/kuaidi_toolbar"/>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="100dp"
+            android:textSize="17dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/add1_t1"
+            android:text="投诉类别"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <me.shihao.library.XRadioGroup
+            android:id="@+id/tousu_add_group"
+            android:layout_weight="8"
+            android:gravity="right"
+            android:layout_marginRight="13dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintLeft_toRightOf="@+id/add1_t1"
+            app:layout_constraintTop_toTopOf="@+id/add1_t1"
+
+            >
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:checked="true"
+                        android:id="@+id/tousu_add_r1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#333333"
+                        android:textSize="16sp"
+                        android:text="服务投诉"/>
+                    <RadioButton
+                        android:id="@+id/tousu_add_r2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#333333"
+                        android:textSize="16sp"
+                        android:text="社区建设投诉"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:id="@+id/tousu_add_r3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#333333"
+                        android:textSize="16sp"
+                        android:text="服务投诉"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </me.shihao.library.XRadioGroup>
+
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="100dp"
+            android:textSize="17dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/add2_t1"
+            android:text="投诉方式"
+
+            app:layout_constraintLeft_toLeftOf="@+id/add1_t1"
+            app:layout_constraintTop_toBottomOf="@+id/tousu_add_group"/>
+
+        <RadioGroup
+            android:id="@+id/add2_g1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintLeft_toRightOf="@+id/add2_t1"
+            app:layout_constraintTop_toTopOf="@+id/add2_t1"
+            app:layout_constraintBottom_toBottomOf="@+id/add2_t1"
+            >
+
+            <RadioButton
+                android:id="@+id/add2_r1"
+                android:text="匿名投诉"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                app:layout_constraintLeft_toRightOf="@+id/add2_t1"
+                app:layout_constraintTop_toTopOf="@+id/add2_t1"
+                app:layout_constraintBottom_toBottomOf="@+id/add2_t1"
+                />
+
+            <RadioButton
+                android:checked="true"
+                android:id="@+id/add2_r2"
+                android:text="实名投诉"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                app:layout_constraintLeft_toRightOf="@+id/add2_r1"
+                app:layout_constraintTop_toTopOf="@+id/add2_t1"
+                app:layout_constraintBottom_toBottomOf="@+id/add2_t1"
+                />
+
+        </RadioGroup>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/add3_l"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add2_g1">
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="100dp"
+                android:textSize="17dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/add3_t1"
+                android:text="姓名"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/add3_l"/>
+
+            <EditText
+                android:id="@+id/add3_e1"
+                android:hint="姓名"
+                android:minWidth="120dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                app:layout_constraintLeft_toRightOf="@+id/add3_t1"
+                app:layout_constraintTop_toTopOf="@+id/add3_t1"
+                app:layout_constraintBottom_toBottomOf="@+id/add3_t1"
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="100dp"
+            android:textSize="17dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/add4_t1"
+            android:text="联系方式"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add3_l"/>
+
+        <EditText
+            android:id="@+id/add4_e1"
+            android:hint="联系方式"
+            android:minWidth="120dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintLeft_toRightOf="@+id/add4_t1"
+            app:layout_constraintTop_toTopOf="@+id/add4_t1"
+            app:layout_constraintBottom_toBottomOf="@+id/add4_t1"
+            />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="100dp"
+            android:textSize="17dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/add5_t1"
+            android:text="投诉内容"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add4_e1"/>
+
+        <EditText
+            android:id="@+id/add5_e1"
+            android:hint="投诉内容"
+            android:minWidth="120dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintLeft_toRightOf="@+id/add5_t1"
+            app:layout_constraintTop_toTopOf="@+id/add5_t1"
+            app:layout_constraintBottom_toBottomOf="@+id/add5_t1"
+            />
+
+        <TextView
+            android:visibility="gone"
+            android:layout_marginTop="10dp"
+            android:layout_width="100dp"
+            android:textSize="17dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/add7_t1"
+            android:text="反馈结果"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add5_e1"/>
+
+        <EditText
+            android:minWidth="120dp"
+            android:visibility="gone"
+            android:id="@+id/add7_e1"
+            android:hint="反馈结果"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintLeft_toRightOf="@+id/add7_t1"
+            app:layout_constraintTop_toTopOf="@+id/add7_t1"
+            app:layout_constraintBottom_toBottomOf="@+id/add7_t1"
+            />
+
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="100dp"
+            android:textSize="17dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/add6_t1"
+            android:text="照片"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add7_t1"/>
+
+        <ImageView
+            android:id="@+id/add6_photo"
+            android:src="@drawable/addphoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintLeft_toRightOf="@+id/add6_t1"
+            app:layout_constraintTop_toTopOf="@+id/add6_t1"
+            />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/tousu_recycle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:overScrollMode="never"
+
+            app:layout_constraintTop_toBottomOf="@+id/add6_photo"/>
+
+        <Button
+            android:background="@drawable/shape"
+            android:id="@+id/tousu_submit"
+            android:text="提交"
+            android:layout_marginBottom="60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

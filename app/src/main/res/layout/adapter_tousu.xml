@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:id="@+id/adapter_seek_message"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background_white_all">
+
+    <ImageView
+        android:id="@+id/circular_blue"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="6dp"
+        android:layout_height="6dp"
+        android:background="@drawable/circular_blue"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <ImageView
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="2dp"
+        android:layout_width="1dp"
+        android:layout_height="35dp"
+        android:background="#e1e1e1"
+
+        app:layout_constraintTop_toBottomOf="@+id/circular_blue"
+        app:layout_constraintLeft_toLeftOf="@+id/circular_blue"></ImageView>
+
+    <ImageView
+        android:id="@+id/circular_green"
+        android:layout_marginTop="42dp"
+        android:layout_width="6dp"
+        android:layout_height="6dp"
+        android:background="@drawable/circular_green"
+
+        app:layout_constraintTop_toBottomOf="@+id/circular_blue"
+        app:layout_constraintLeft_toLeftOf="@+id/circular_blue"/>
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="#b36c6c76"
+        android:layout_marginLeft="21dp"
+        android:textSize="13sp"
+        android:text="创建日期"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/circular_blue"/>
+
+    <TextView
+        android:id="@+id/adapter_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        android:text="2020-03-20"
+        app:layout_constraintTop_toBottomOf="@id/text1"
+        app:layout_constraintLeft_toLeftOf="@+id/text1"/>
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#b36c6c76"
+        android:textSize="13sp"
+        android:text="投诉信息"
+        android:layout_marginTop="34dp"
+        app:layout_constraintTop_toBottomOf="@+id/text1"
+        app:layout_constraintLeft_toLeftOf="@+id/text1"/>
+
+    <TextView
+        android:id="@+id/adapter_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        android:text="加速啊都是多少度都是多少度是都是"
+        app:layout_constraintTop_toBottomOf="@id/text3"
+        app:layout_constraintLeft_toLeftOf="@+id/text3"/>
+
+    <ImageView
+        android:layout_marginTop="42dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/right"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

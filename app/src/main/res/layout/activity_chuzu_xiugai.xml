@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/fragement_chuzu_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/fragement_chuzu_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="修改信息"
+            android:textSize="20dp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_marginLeft="40dp"
+            android:textSize="18dp"
+            android:background="@null"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="小区地址" />
+
+        <EditText
+            android:background="@null"
+            android:layout_marginLeft="40dp"
+            android:id="@+id/fragement_chuzu_address"
+            android:textSize="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="人数" />
+        <TextView
+            android:visibility="gone"
+            android:background="@null"
+            android:layout_marginLeft="40dp"
+            android:id="@+id/fragement_chuzu_address1"
+            android:textSize="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="人数" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_marginLeft="40dp"
+            android:textSize="18dp"
+            android:background="@null"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="查看人数" />
+
+        <EditText
+            android:enabled="false"
+            android:background="@null"
+            android:layout_marginLeft="40dp"
+            android:id="@+id/fragement_chuzu_num"
+            android:textSize="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="人数" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_marginLeft="40dp"
+            android:textSize="18dp"
+            android:background="@null"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="报价" />
+
+        <EditText
+            android:background="@null"
+            android:layout_marginLeft="40dp"
+            android:id="@+id/fragement_chuzu_money"
+            android:textSize="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="价格" />
+        <TextView
+            android:visibility="gone"
+            android:layout_marginLeft="40dp"
+            android:id="@+id/fragement_chuzu_money1"
+            android:textSize="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="价格" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_marginLeft="40dp"
+            android:textSize="18dp"
+            android:background="@null"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="联系电话" />
+
+        <EditText
+            android:background="@null"
+            android:layout_marginLeft="40dp"
+            android:id="@+id/fragement_chuzu_phone"
+            android:textSize="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="电话" />
+        <TextView
+            android:visibility="gone"
+            android:layout_marginLeft="40dp"
+            android:id="@+id/fragement_chuzu_phone1"
+            android:textSize="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="电话" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_marginLeft="40dp"
+            android:textSize="18dp"
+            android:background="@null"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="介绍" />
+
+        <EditText
+            android:background="@null"
+            android:layout_marginLeft="40dp"
+            android:id="@+id/fragement_chuzu_jieshao"
+            android:textSize="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="介绍" />
+        <TextView
+            android:visibility="gone"
+            android:background="@null"
+            android:layout_marginLeft="40dp"
+            android:id="@+id/fragement_chuzu_jieshao1"
+            android:textSize="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="介绍" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/fragement_chuzu_submit"
+        android:layout_marginTop="60dp"
+        android:layout_gravity="center"
+        android:text="提交"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>
